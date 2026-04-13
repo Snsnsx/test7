@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Проверочная работа №3</title>
+<title>Проверочная работа №4</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600&display=swap');
 
@@ -391,8 +391,8 @@
   <!-- LOGIN -->
   <div class="screen active" id="screenLogin">
     <div class="card" style="margin-top:auto;margin-bottom:auto">
-      <div class="login-title">Проверочная работа №3</div>
-      <div class="login-sub">Введи своё имя и фамилию, чтобы начать. У тебя будет 20 минут. Не покидай страницу во время работы.</div>
+      <div class="login-title">Проверочная работа №4</div>
+      <div class="login-sub">Введите своё имя и фамилию, чтобы начать. Время тестирования - 20 минут. Не покидайте страницу, не переходите на другие сайты: ведётся система штрафных баллов.</div>
       <label>Фамилия</label>
       <input type="text" id="inputSurname" placeholder="Иванов" autocomplete="off">
       <label>Имя</label>
@@ -469,10 +469,10 @@ const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyyMxyj0L5_UW
 
 // Correct answers  [var1, var2, var3, var4] =======================================================
 const CORRECT_ANSWERS = [
-  [11.5, 11.5, 11.5, 11.5],
-  [84, 30, 50, 8],
-  [2413, 123, 132,123],
-  [-3, -3, -2.5, 5]
+  [96, 65, 77, 48],
+  [144, 134, 144, 134],
+  [1000, 1000, 900, 5000],
+  [180, 180, 180, 180]
 ];
 // Correct answers =================================================================================
 
@@ -755,7 +755,7 @@ function renderTask() {
   icon.style.display = '';
   lbl.style.display = '';
 
-  const imgSrc = `task${currentTask+1}_v${variant+1}.png`;
+  const imgSrc = `${variant+1}-${currentTask+1}.png`;
 
   img.onload = () => {
     img.style.display = 'block';
