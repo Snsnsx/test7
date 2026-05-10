@@ -391,7 +391,7 @@
   <!-- LOGIN -->
   <div class="screen active" id="screenLogin">
     <div class="card" style="margin-top:auto;margin-bottom:auto">
-      <div class="login-title">Проверочная работа №5<br>7 Параллель</div>
+      <div class="login-title">Проверочная работа<br>Параллель 7</div>
       <div class="login-sub">Введите своё имя и фамилию, чтобы начать. Время тестирования - 20 минут. Не покидайте страницу, не переходите на другие сайты: ведётся система штрафных баллов.</div>
       <label>Фамилия</label>
       <input type="text" id="inputSurname" placeholder="Иванов" autocomplete="off">
@@ -755,7 +755,7 @@ function renderTask() {
   icon.style.display = '';
   lbl.style.display = '';
 
-  const imgSrc = `${variant+1}-${currentTask+1}.png`;
+  const imgSrc = `${variant+1}${currentTask+1}.png`;
 
   img.onload = () => {
     img.style.display = 'block';
